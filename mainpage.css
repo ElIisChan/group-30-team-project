@@ -1,0 +1,183 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(245, 245, 245);
+    color: rgb(246, 246, 246);
+    margin: 0%;
+    padding: 0%;
+    
+}
+*{
+    transition: 0.4s all ease-in-out;
+}
+
+.navigationBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba( 39, 50, 57,1);
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left:auto ;
+    margin-right: auto;
+    margin-top:-5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.nav-menubar{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.bannerImages{
+    margin-left: 25px;
+}
+.navigation-menu ul{
+    display: flex;
+    align-items: center;
+
+}
+.navitem{
+    list-style-type: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: larger;
+    font-weight: 600;
+}
+.link{
+    
+   
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+   
+    
+}
+.login-options{
+    display: flex;
+    align-items: center;
+}
+.login-options a{
+    margin-left: 10px;
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: large;
+}
+.login-options svg{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.product-container{
+   margin-top: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+
+
+.product-container-pro{
+    overflow: hidden;
+    flex-wrap: wrap;
+    word-wrap: normal;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 250px;
+    color: black;
+}
+.product-container-heading{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: rgba( 39, 50, 57,1);
+    color: rgb(255, 255, 255);
+}
+
+a{
+    color: white
+}
+a:hover{
+    color: rgb(0, 0, 0);
+}
+.logo-container h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 8px;
+}
+.main-image img{
+    position: absolute;
+    z-index: -1;
+    filter: opacity(90%);
+}
+.main-image-text{
+    margin-top: 400px;
+}
+.form-button h3{
+    color: black;
+}
+.product-container-pro{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    width: 500px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 12px ;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.393);
+}
+.product-container-pro:hover{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.717);
+}
+
+.product-container-big{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+}
+.information-container{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.information-container div ul{
+    list-style:none ;
+    font-size: 12px;
+}
+.product-container-image{
+    display:flex;
+
+    justify-items: center;
+}
+.product-container-image img{
+    margin-left: 70px;
+}
+.information-container div button{
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: rgba( 39, 50, 57,1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+.information-container div button:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 2px 20px black;
+}
