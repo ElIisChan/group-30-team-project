@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn - Tech Atlas</title>
+    <link rel="stylesheet" href="./css/products-page.css">
+    <link rel="stylesheet" href="./css/mainpage.css">
+    <style media="screen">
+        *{
+            transition: all 1s ease-in-out;
+        }
+        *,
+        *:before,
+        *:after {
+           
+            
+            box-sizing: border-box;
+        }
+
+        .mainContainer{
+            margin-top: 100px;
+        }
+
+        form {
+            
+            height: auto;
+            width: auto;
+            background-color:  rgba( 39, 50, 57,1);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 60%;
+            left: 50%;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            padding: 55px 200px;
+        }
+
+        form * {
+            font-family: 'Gabriola';
+            color: white;
+            letter-spacing: 2px;
+            outline: none;
+            border: none;
+        }
+
+        form h3 {
+            font-size: 50px;
+            font-weight: 50;
+            line-height: 0px;
+            text-align: center;
+        }
+
+        label {
+            display: inline-block;
+            margin-top:  15px;
+            font-size: 25px; 
+        }
+
+        input {
+            display: block;
+            color: #080710;
+            height: 40px;
+            width: 100%;
+            background-color: white;
+            border-radius: 3px;
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+
+        button {
+            margin-top: 50px;
+            width: 100%;
+            background-color: #ffffff;
+            color: #080710;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #637BA9;
+            color: #f8f8f8;
+
+        }        
+    </style>
+</head>
+<body style="margin-bottom:200px; ">
+    <header class="navigationBar" >
+        <div class="logo-container">
+            <h2><img src="./TechAtlas_files/logo.png" height="50" width="200" alt="Sorry. Image Not Available"></h2>
+        </div>
+
+
+        <div class="login-options">
+
+            <a href='#'> <svg xmlns='http://www.w3.org/2000/svg' width='26'
+                    height='26' fill='currentColor' class='bi bi-person' viewBox='0 0 16 16'>
+                    <path
+                        d='M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z' />
+                </svg>
+            </a>
+            
+            <a href='./sign-up-page.html' class='link'>Sign up</a>
+
+            </a>
+         
+
+        </div>
+    </header>
+    <header class="nav-menubar">
+        <div class="navigation-menu">
+            <ul>
+            
+                <li class="navitem"><a href="./mainpage.html" class="link">Home</a> </li>
+                <li class="navitem"> <a href="./products.html" class="link">Products</a> </li>
+                <li class="navitem"> <a href="./contact-page.html" class="link">Contact Us</a></li>
+                <li class="navitem"> <a href="./about-us-page.html" class="link">About Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="mainContainer" style="margin-bottom:200px ;">
+        <div class="background" style="margin-bottom:200px ;">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form method="get" action="./login-function.php" style="margin-bottom: 400px ;">
+            <h3>Login Here</h3>
+
+            <label for="username">Email: </label>
+            <input type="text" id="username" name="email">
+
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password">
+
+            <button>Log In</button>
+            
+        </form>
+    </div>
+
+
+    
+</body>
+</html>
