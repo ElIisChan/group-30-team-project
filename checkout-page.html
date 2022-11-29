@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Tech Atlas</title>
+    <link rel="stylesheet" href="./css/sign-up-page.css">
+    <link rel="stylesheet" href="./css/mainpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.3.2/jquery.payment.min.js">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.min.js.map">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+     <link rel="stylesheet" href="./css/checkout-page.css">
+</head>
+<body>
+    <header class="navigationBar">
+        <div class="logo-container">
+            <h2><img src="./TechAtlas_files/logo.png" height="50" width="200" alt="Sorry. Image Not Available!"></h2>
+        </div>
+
+
+        <div class="login-options">
+
+            <a style='color:white;' href='#'> <svg xmlns='http://www.w3.org/2000/svg' width='26'
+                    height='26' fill='currentColor' class='bi bi-person' viewBox='0 0 16 16'>
+                    <path
+                        d='M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z' />
+                </svg>
+            </a>
+
+            </a>
+            <a href='./Sign-in-page.html' class='link'>Log In</a>
+            <a href='./sign-up-page.html' class='link'>Sign up</a>
+
+        </div>
+    </header>
+    <header class="nav-menubar">
+        <div class="navigation-menu">
+            <ul>
+              
+              <li class="navitem"><a href="./mainpage.html" class="link">Home</a> </li>
+              <li class="navitem"> <a href="./products.html" class="link">Products</a> </li>
+              <li class="navitem"> <a href="./contact-page.html" class="link">Contact Us</a></li>
+              <li class="navitem"> <a href="./about-us-page.html" class="link">About Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="checkout">
+        <div class="checkout_wrap">
+          <div class="row">
+      
+            <div class="col-xs-4">
+              <!--PRODUCT-->
+              <div data-ng-app='' data-ng-init='quantity=1;price=30'>
+
+                <h5 class="price-color">Total Amount</h5>
+                <h4 class="price-color">Guest Checkout<h4>
+
+                       <p class="price-color-heading"> Days: <input type='number' ng-model='quantity' style="background-color: rgba(255, 255, 255, 0.048); border:1px solid rgba(255, 255, 255, 0.514); color: white; border-radius:8px;box-shadow: 2px 2px 10px rgb(54, 0, 0) ;padding-top:6px; padding-bottom: 6px ;" ></p>
+                       <p class="price-color-heading"> Price: 0£ <input type='number' ng-model='price' style='display:none ;'></p>
+                      
+
+                        <p class="total-amount" ><b>Amount to pay:</b> {{quantity * price }}£ </p>
+                </div>
+            </div>
+      
+            <div class="col-xs-8">
+              <!--CHECKOUT-->
+              <div class="product_arrow">
+                <div class="triangle-left"></div>
+              </div>
+              <div class="checkout_details">
+                <div class="col-xs-12">
+                  <h1 class="checkout_title">Credit Card Detail</h1>
+                  <form class="checkout_form" action="confirmation-page.html" method="POST">
+                    <input type="name" placeholder="Customer Full Name" name="card-name">
+                    <input class="cc-number" type="text" placeholder="Card Number" maxlength="20" name="card-number">
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <input class="cc-exp" type="name" placeholder="Card Expiry" name="exp-date">
+                      </div>
+                      <div class="col-xs-6">
+                        <input class="cc-cvc" type="number" placeholder="CVV" name="card-cvv">
+                      </div>
+                    </div>
+                    <a href=""></a>
+                    <button class="checkout_pay" type "button" value="submit">Pay &raquo;</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    
+    
+</body>
+</html>
