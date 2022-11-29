@@ -1,0 +1,132 @@
+.sign_form{
+    font-family: 'Gabriola';
+    letter-spacing: 2px;
+    color: white;
+    background-color: rgba( 39, 50, 57,1);
+    box-shadow: 1px 2px 84px -19px black;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-bottom: 40px;
+    padding-top:  0px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.sign_form-container{
+    display: block;
+    
+    justify-content: left;
+  
+    width: 400px;
+   
+    
+}
+.sign_form-container input{
+    font-family: 'Gabriola';
+    font-size: 20px;
+    width: 500px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(252, 252, 252);
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.493);
+}
+.sign_form-container input:focus{
+    outline: none;
+    border-bottom: 2px solid  #0281ff7c;
+}
+.sign_form-container p{
+    font-size: 20px;
+}
+.sign_form-container2{
+    justify-content: left;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.sign_form-container2 input{
+    font-size: 15px;
+    width: 200px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: rgba(0, 0, 139, 0);
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.493);
+}
+.sign_form-container2 input:focus{
+    outline: none;
+    border-bottom: 2px solid #0281ff7c;
+
+}
+#primaryShop{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    color: white;
+    background-color: rgba(0, 0, 139, 0);
+   
+    font-size: 15px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.493);
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#primaryShop:focus{
+    outline: none;
+    border: 2px solid  #0281ff7c ;
+    
+}
+
+#primaryShop option{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.sign_form-container3{
+
+    width: 500px;
+    
+}
+.sign_form-container3 ul li{
+    font-size: 12px;
+    
+}
+
+#sign_form_button{
+    
+    width: 500px;
+    margin-top: 25px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.293);
+    
+}
+#sign_form_button:hover{
+   background-color: #637BA9 ;
+   color: white;
+  
+}
+
+.sign_form_heading h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
