@@ -4,7 +4,7 @@ body{
     color: rgb(246, 246, 246);
     margin: 0%;
     padding: 0%;
-    
+
 }
 *{
     transition: 0.4s all ease-in-out;
@@ -14,15 +14,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba( 39, 50, 57,1);
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left:auto ;
-    margin-right: auto;
+    background-color: #4c777e;
     margin-top:-5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 20px;
 
 }
 .nav-menubar{
@@ -49,12 +43,12 @@ body{
     font-weight: 600;
 }
 .link{
-    
-   
+
+
     color: rgb(255, 255, 255);
     text-decoration: none;
-   
-    
+
+
 }
 .login-options{
     display: flex;
@@ -102,7 +96,7 @@ body{
     justify-items: center;
     text-align: center;
     width: 100%;
-    background-color: rgba( 39, 50, 57,1);
+    background-color: #4c777e;
     color: rgb(255, 255, 255);
 }
 
@@ -144,7 +138,7 @@ a:hover{
 
 .product-container-big{
     display: flex;
-    
+
     justify-content: space-between;
     align-items: center;
     width: 1000px;
@@ -170,7 +164,7 @@ a:hover{
     margin-left: 50px;
     margin-top: 20px;
     padding: 15px 30px;
-    background-color: rgba( 39, 50, 57,1);
+    background-color: #4c777e;
     color: white;
     border: none;
     border-radius: 8px;
