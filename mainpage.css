@@ -84,9 +84,7 @@ body{
     flex-wrap: wrap;
     word-wrap: normal;
     margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 250px;
+    width: 100%;
     color: black;
 }
 .product-container-heading{
