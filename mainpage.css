@@ -145,6 +145,8 @@ a:hover{
     color: #4c777e;
     margin-top: 25px;
     padding: 10px 15px;
+    display: block;
+    text-align: center;
     border: 1px solid #4c777e;
 }
 .information-container a:hover {

@@ -19,7 +19,7 @@
                 <?php while($row = $result->fetch_object()) { ?>
                     <div class="product-container-pro ">
                         <div class="product-container-image">
-                            <h3 class="product-container-pro-heading"><?php echo $row->p_name; ?>></h3>
+                            <h3 class="product-container-pro-heading"><?php echo $row->p_name; ?></h3>
                             <img src="img/<?php echo $row->p_imageid; ?>.jpg" width="100%" height="auto" alt="">
                         </div>
                         <div class="information-container">
@@ -29,7 +29,7 @@
                                 <h3>Remaining Stock:</h3>
                                 <p><?php echo $row->p_stockcount; ?></p>
                             </div>
-                            <a href="product.php?id=<?php echo $row->p_id; ?>" class="product-container-pro-button">View Product</a>
+                            <a href="product.php?id=<?php echo $row->product_id; ?>" class="product-container-pro-button">View Product</a>
                         </div>
                     </div>
                 <?php } ?>
