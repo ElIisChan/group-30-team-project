@@ -29,7 +29,7 @@
                                     <p><?php echo $row->p_price; ?></p>
                                     <h3>Remaining Stock:</h3>
                                     <p><?php echo $row->p_stockcount; ?></p>
-                                <div>
+                                </div>
                                 <a href="product.php?id=<?php echo $row->p_id; ?>" class="product-container-pro-button">View Product</a>
                             </div>
                         </div>
