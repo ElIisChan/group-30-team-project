@@ -14,7 +14,9 @@
             <h2>Available Items</h2>
 
             <?php
+                echo 'before connection';
                 $result = database_connection()->query("SELECT * FROM products");
+                echo 'after connection';
                 if($result->num_rows > 0){
                     while($row = $result->fetch_object()) {
                         echo $row;
