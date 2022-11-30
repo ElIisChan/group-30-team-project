@@ -1,7 +1,7 @@
 <?php include("header.php"); ?>
     <link rel="stylesheet" href="/products-page.css">
     <div class="main-image">
-        <img src="/product.jpg" height="auto" width="100%" alt="">
+        <img src="/img/product.jpg" height="auto" width="100%" alt="">
     </div>
     <center>
         <div class="main-image-text">
