@@ -49,4 +49,3 @@
 		</ul>
 	</div>
 </header>
-<?php include("functions.php"); ?>

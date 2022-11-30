@@ -15,7 +15,8 @@
 
             <?php
                 echo 'before connection';
-                $result = database_connection()->query("SELECT * FROM products");
+			    $db = new mysqli("cs2410-web01pvm.aston.ac.uk", "u-210109870", "mVrSNyGnFNSJTDU", "u_210109870_db");
+                $result = $db->query("SELECT * FROM products");
                 echo 'after connection';
                 if($result->num_rows > 0){
                     while($row = $result->fetch_object()) {
