@@ -1,7 +1,7 @@
 <?php include("header.php"); ?>
     <link rel="stylesheet" href="/products-page.css">
     <div class="main-image">
-        <img src="./TechAtlas_files/product.jpeg" height="870" width="1519" alt="">
+        <img src="/product.jpg" height="auto" width="100%" alt="">
     </div>
     <center>
         <div class="main-image-text">
