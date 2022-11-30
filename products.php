@@ -16,8 +16,8 @@
             <?php
                 $result = database_connection()->query("SELECT * FROM products");
                 if($result->num_rows > 0){
-                    while($row = $result->fetch_assoc()){
-                        component($row['p_name'], $row['p_price'], $row['product_image'], $row['product_id']);
+                    while($row = $result->fetch_object()) {
+                        echo $row;
                     }
                 }else{
                     echo "No products available";
