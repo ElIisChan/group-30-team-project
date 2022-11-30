@@ -123,7 +123,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    width: 500px;
+    width: 100%;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 12px ;
     background-color: rgb(255, 255, 255);
@@ -135,29 +135,27 @@ a:hover{
 }
 
 .product-container-big{
-    display: flex;
-
-    justify-content: space-between;
-    align-items: center;
     width: 1000px;
 }
 .information-container{
-    display: flex;
     text-decoration: none;
     list-style: none;
+}
+.information-container a {
+    color: #4c777e;
+    margin-top: 25px;
+    padding: 10px 15px;
+    border: 1px solid #4c777e;
+}
+.information-container a:hover {
+    background-color: #000;
+    color: white;
 }
 .information-container div ul{
     list-style:none ;
     font-size: 12px;
 }
-.product-container-image{
-    display:flex;
 
-    justify-items: center;
-}
-.product-container-image img{
-    margin-left: 70px;
-}
 .information-container div button{
     margin-left: 50px;
     margin-top: 20px;
