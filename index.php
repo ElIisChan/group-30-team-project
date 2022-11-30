@@ -8,5 +8,6 @@
             <p>Price Friendly and Premium Products</p>
         </div>
     </center>
+    <?php database_connection(); ?>
 </body>
 </html>

@@ -11,11 +11,18 @@
     </center>
     <div class="product-container">
         <!-- product query  -->
-        <form action="./productLoading.php" method="get">
-            <center>
-                <h2>Available Items</h2>
-            </center>
+            <h2>Available Items</h2>
 
+            <?php
+                $result = database_connection()->query("SELECT * FROM products");
+                if($result->num_rows > 0){
+                    while($row = $result->fetch_assoc()){
+                        component($row['p_name'], $row['p_price'], $row['product_image'], $row['product_id']);
+                    }
+                }else{
+                    echo "No products available";
+                }
+            ?>
             <div class="product-container-big">
                 <div class="product-container-sub">
                     <div class="product-container-pro ">
