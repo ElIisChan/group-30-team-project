@@ -10,149 +10,36 @@
         </div>
     </center>
     <div class="product-container">
-        <!-- product query  -->
-            <h2>Available Items</h2>
-
-            <?php
-                $db = new mysqli("localhost", "u-210109870", "mVrSNyGnFNSJTDU", "u_210109870_db");
-                $result = $db->query("SELECT * FROM products");
-                if($result->num_rows > 0){
-                    while($row = $result->fetch_object()) {
-                        echo $row->p_name;
-                    }
-                }else{
-                    echo "No products available";
-                }
-            ?>
+        <h2>Available Items</h2>
+        <?php
+        $db = new mysqli("localhost", "u-210109870", "mVrSNyGnFNSJTDU", "u_210109870_db");
+        $result = $db->query("SELECT * FROM products");
+        if($result->num_rows > 0){ ?>
             <div class="product-container-big">
                 <div class="product-container-sub">
-                    <div class="product-container-pro ">
-
-                        <div class="product-container-image">
-                            <h3 class="product-container-pro-heading">Opel Corsa</h3>
-                            <img src="img/Car1.png" alt="">
+                    <?php while($row = $result->fetch_object()) { ?>
+                        <div class="product-container-pro ">
+                            <div class="product-container-image">
+                                <h3 class="product-container-pro-heading"><?php echo $row->p_name; ?>></h3>
+                                <img src="img/<?php echo $row->p_imageid; ?>.jpg" alt="">
+                            </div>
+                            <div class="information-container">
+                                <div>
+                                    <h3>Price:</h3>
+                                    <p><?php echo $row->p_price; ?></p>
+                                    <h3>Remaining Stock:</h3>
+                                    <p><?php echo $row->p_stockcount; ?></p>
+                                <div>
+                                <a href="product.php?id=<?php echo $row->p_id; ?>" class="product-container-pro-button">View Product</a>
+                            </div>
                         </div>
-                        <div class="information-container">
-                            <div>
-                                <ul>
-                                    <li>Free cancellation (48h)</li>
-                                    <li>Fair fuel policy</li>
-                                    <li>Unlimited mileage</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li>Theft coverage</li>
-                                    <li>Collision damage waiver</li>
-                                    <li>Liability coverage</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <center>
-                                    <button name="product-type" type="submit" value="1">View Deal</button>
-                                </center>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="product-container-pro ">
-
-                        <div class="product-container-pro">
-                            <h3 class="product-container-pro-heading">Citron C3 Aircross</h3>
-                            <img src="img/Citron C3 Aircross.png" alt="">
-                        </div>
-                        <div class="information-container">
-                            <div>
-                                <ul>
-                                    <li>Free cancellation (48h)</li>
-                                    <li>Fair fuel policy</li>
-                                    <li>Unlimited mileage</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li>Theft coverage</li>
-                                    <li>Collision damage waiver</li>
-                                    <li>Liability coverage</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <center>
-                                    <button name="product-type" type="submit" value="2">View Deal</button>
-                                </center>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="product-container-pro ">
-
-                        <div class="product-container-image">
-                            <h3 class="product-container-pro-heading">Fiat-500</h3>
-                            <img src="img/Fiat-500.png" alt="">
-                        </div>
-                        <div class="information-container">
-                            <div>
-                                <ul>
-                                    <li>Free cancellation (48h)</li>
-                                    <li>Fair fuel policy</li>
-                                    <li>Unlimited mileage</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li>Theft coverage</li>
-                                    <li>Collision damage waiver</li>
-                                    <li>Liability coverage</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <center>
-                                    <button name="product-type" type="submit" value="3">View Deal</button>
-                                </center>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="product-container-pro ">
-
-                        <div class="product-container-image">
-                            <h3 class="product-container-pro-heading">Peugeot-208</h3>
-                            <img src="img/Peugeot-208.png" alt="">
-                        </div>
-                        <div class="information-container">
-                            <div>
-                                <ul>
-                                    <li>Free cancellation (48h)</li>
-                                    <li>Fair fuel policy</li>
-                                    <li>Unlimited mileage</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <ul>
-                                    <li>Theft coverage</li>
-                                    <li>Collision damage waiver</li>
-                                    <li>Liability coverage</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <center>
-                                    <button name="product-type" type="submit" value="4">View Deal</button>
-                                </center>
-                            </div>
-
-                        </div>
-                    </div>
-
+                    <?php } ?>
                 </div>
-
             </div>
-
-
-        </form>
+        <?php } else {
+            echo "No products available";
+        }
+        ?>
     </div>
 
 </body>
