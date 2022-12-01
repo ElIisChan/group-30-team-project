@@ -1,6 +1,6 @@
 <?php include("header.php"); ?>
 <link rel="stylesheet" href="/products-page.css">
-<div class="product-container">
+<div class="product-container" style="margin-top: 25px;">
 	<?php
 	$db = new mysqli("localhost", "u-210109870", "mVrSNyGnFNSJTDU", "u_210109870_db");;
 	$result = $db->query("SELECT * FROM products WHERE product_id = " . $_GET['id']);
@@ -15,12 +15,13 @@
 					<div class="information-container">
 						<div>
 							<h3>Price:</h3>
-							<p><?php echo $row->p_price; ?></p>
+							<p>£<?php echo $row->p_price; ?></p>
 							<h3>Remaining Stock:</h3>
 							<p><?php echo $row->p_stockcount; ?></p>
 						</div>
 						<form action="cart.php" method="post">
 							<input type="number" name="quantity" value="1" min="1" max="<?php $row->p_stockcount; ?>" placeholder="Quantity" required>
+                            <input type="hidden" name="product_price" value="<?php $row->p_price; ?>">
 							<input type="hidden" name="product_id" value="<?php $row->product_id; ?>">
 							<input type="submit" value="Add To Cart">
 						</form>
