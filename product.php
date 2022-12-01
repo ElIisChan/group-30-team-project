@@ -23,7 +23,7 @@
 							<input type="number" name="quantity" value="1" min="1" max="<?php $row->p_stockcount; ?>" placeholder="Quantity" required>
                             <input type="hidden" name="product_price" value="<?php $row->p_price; ?>">
 							<input type="hidden" name="product_id" value="<?php $row->product_id; ?>">
-							<input type="submit" value="Add To Cart">
+							<input type="submit" name="submit" value="Add To Cart">
 						</form>
 					</div>
 				</div>
