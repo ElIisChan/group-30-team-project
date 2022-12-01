@@ -8,7 +8,7 @@ if (isset($_POST['product_price'])) {
 	if(isset($_SESSION['cart'])) {
 		$cart = $_SESSION['cart'];
 		if(isset($cart[$product_id])) {
-			echo '<p style="color: #000;">Product already in cart</p>';
+			echo '<p style="padding: 25px 0; width: 80%; margin: 0 auto; color: #000;">Product already in cart</p>';
 		} else {
 			$cart[$product_id] = array("product_name" => $product_name, "product_id" => $product_id, "product_price" => $product_price, "product_quantity" => $product_quantity);
 		}
@@ -20,7 +20,7 @@ if (isset($_POST['product_price'])) {
 	}
 	echo '<div class="cart-container" style="padding: 25px 0; width: 80%; margin: 0 auto;">';
 		foreach($_SESSION['cart'] as $key => $value) {
-			echo '<p style="color: #000;">' . $value['product_name'] . ' ' . $value['product_id'] . ' ' . $value['product_price'] . ' ' . $value['quantity'] . '</p>>';
+			echo '<p style="color: #000;">Product Name:' . $value['product_name'] . ' Product Price: £' . $value['product_price'] . ' Quantity:' . $value['product_quantity'] . '</p>';
 		}
 	echo '</div>';
 } else {
