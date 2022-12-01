@@ -25,7 +25,7 @@
                         <div class="information-container">
                             <div>
                                 <h3>Price:</h3>
-                                <p><?php echo $row->p_price; ?></p>
+                                <p>£<?php echo $row->p_price; ?></p>
                                 <h3>Remaining Stock:</h3>
                                 <p><?php echo $row->p_stockcount; ?></p>
                             </div>
