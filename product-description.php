@@ -1,12 +1,8 @@
-
-
-
-
 <?php
     session_start(); 
-    function fetchProducts(){
+    function fetchproductInfo(){
         include('connection.php');
-        $sth = $db->prepare("SELECT ALL products FROM productArchive;");    
+        $sth = $db->prepare("SELECT ALL * FROM products;");    
         $sth->execute();
         $results = $sth->fetchAll(PDO::FETCH_ASSOC);
         foreach ($results as $result) {
@@ -18,7 +14,7 @@
 
     }
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-        fetchProducts();
+        fetchproductInfo();
     }
     else{
         echo '{"success":false,"message":"incorrect request method"}'; exit;
