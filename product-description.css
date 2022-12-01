@@ -1,4 +1,4 @@
-.vehicle-desciption-container{
+.product-desciption-container{
     margin-top: 200px;
     color: black;
     display: flex;
@@ -13,21 +13,21 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.vehicle-description-sub-container{
+.product-description-sub-container{
     align-items: center;
     justify-content: center;
     justify-items: center;
     align-content: center;
 }
-.vehicle-desciption-container div ul{
+.product-desciption-container div ul{
     list-style: none;
 }
-.vehicle-desciption-container div ul li{
+.product-desciption-container div ul li{
     
     font-size: smaller;
    
 }
-.vehicle-description-sub-container button{
+.product-description-sub-container button{
     margin-top: 30px;
     padding: 10px 30px ;
     background-color: rgb(255, 102, 0);
@@ -35,7 +35,8 @@
     border: none;
     border-radius: 6px ;
 }
-.vehicle-description-sub-container a button:hover{
+.product-description-sub-container a button:hover{
  
    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.542);
 }
+
