@@ -21,6 +21,7 @@
 						</div>
 						<form action="cart.php" method="post">
 							<input type="number" name="quantity" value="1" min="1" max="<?php echo $row->p_stockcount; ?>" placeholder="Quantity" required>
+                            <input type="hidden" name="product_name" value="<?php echo $row->p_name; ?>">
                             <input type="hidden" name="product_price" value="<?php echo $row->p_price; ?>">
 							<input type="hidden" name="product_id" value="<?php echo $row->product_id; ?>">
 							<input type="submit" name="submit" value="Add To Cart">
