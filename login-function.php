@@ -33,7 +33,7 @@ $password = stripcslashes($_GET['password']);
     else{  
         echo "<script>alert('Login Unsuccessful')</script>";  
 
-        include 'Sign-in-page.php';
+        include 'log-in-page.php';
     } 
    
 
