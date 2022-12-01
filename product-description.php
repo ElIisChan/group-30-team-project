@@ -2,7 +2,7 @@
     session_start(); 
     function fetchproductInfo(){
         include('connection.php');
-        $sth = $db->prepare("SELECT ALL * FROM products;");    
+        $sth = $db->prepare("SELECT ALL p_name FROM products;");    
         $sth->execute();
         $results = $sth->fetchAll(PDO::FETCH_ASSOC);
         foreach ($results as $result) {
