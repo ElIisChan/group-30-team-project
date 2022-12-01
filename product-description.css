@@ -1,0 +1,41 @@
+.vehicle-desciption-container{
+    margin-top: 200px;
+    color: black;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    justify-self: center ;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.387);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.vehicle-description-sub-container{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+.vehicle-desciption-container div ul{
+    list-style: none;
+}
+.vehicle-desciption-container div ul li{
+    
+    font-size: smaller;
+   
+}
+.vehicle-description-sub-container button{
+    margin-top: 30px;
+    padding: 10px 30px ;
+    background-color: rgb(255, 102, 0);
+    color: white;
+    border: none;
+    border-radius: 6px ;
+}
+.vehicle-description-sub-container a button:hover{
+ 
+   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.542);
+}
