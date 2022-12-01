@@ -176,3 +176,11 @@ a:hover{
 .main-image img {
     filter: brightness(0.5);
 }
+.checkout {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+.checkout * {
+    color: #000;
+}
