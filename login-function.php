@@ -9,7 +9,7 @@ $password = stripcslashes($_GET['password']);
     $email = mysqli_real_escape_string($db, $email);  
     $password = mysqli_real_escape_string($db, $password);  
     
-    $sql = "SELECT name,email,password from `user`  where email = '$email' and password = '$password' ";  
+    $sql = "SELECT name,email,password from `user`  where name = '$email' and password = '$password' ";  
     $result = mysqli_query($db, $sql);  
     // $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
     $count = mysqli_num_rows($result);  
