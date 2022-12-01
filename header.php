@@ -34,7 +34,7 @@
 		</a>
 
 		</a>
-		<a href='/log-in-page-page.php' class='link'>Log In</a>
+		<a href='/log-in-page.php' class='link'>Log In</a>
 		<a href='/sign-up-page.php' class='link'>Sign up</a>
 
 	</div>
