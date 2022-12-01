@@ -23,6 +23,7 @@ if (isset($_POST['product_price'])) {
 			echo '<p style="color: #000;">Product Name:' . $value['product_name'] . ' Product Price: £' . $value['product_price'] . ' Quantity:' . $value['product_quantity'] . '</p>';
 		}
 	echo '</div>';
+	echo '<a href="checkout-page.php" style="padding: 25px 0; width: 80%; margin: 0 auto; color: #000;">Checkout</a>';
 } else {
 	echo '<h1 style="color: #000;">No product data, return to store</h1>';
 	echo '<a style="color: #000;" href="index.php">Return to store</a>';
