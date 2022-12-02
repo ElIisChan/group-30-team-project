@@ -15,8 +15,8 @@
         <ul>
         <li class="navitem"><a href="mainpage.html" class="link">Home</a> </li>
         <li class="navitem"> <a href="cars-page.html" class="link">Cars</a> </li>
-        <li class="navitem"> <a href="contact-page.html" class="link">Contact Us</a></li>
-        <li class="navitem"> <a href="about-us-page.html" class="link">About Us</a></li>           
+        <li class="navitem"> <a href="contact-page.php" class="link">Contact Us</a></li>
+        <li class="navitem"> <a href="about-us-page.html" class="link">About Us</a></li>
          </ul>
         </div>
     <section class="main-container">

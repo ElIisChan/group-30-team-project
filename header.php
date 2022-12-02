@@ -44,8 +44,8 @@
 		<ul>
 			<li class="navitem"><a href="/index.php" class="link">Home</a> </li>
 			<li class="navitem"> <a href="/products.php" class="link">Products</a> </li>
-			<li class="navitem"> <a href="/contact.php" class="link">Contact Us</a></li>
-			<li class="navitem"> <a href="./about-us.php" class="link">About Us</a></li>
+			<li class="navitem"> <a href="/contact-page.php" class="link">Contact Us</a></li>
+			<li class="navitem"> <a href="/about.php" class="link">About Us</a></li>
 		</ul>
 	</div>
 </header>
