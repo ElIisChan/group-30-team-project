@@ -1,10 +1,10 @@
 <?php include("header.php"); ?>
 <link rel="stylesheet" href="css/user-dashboard.css">
     <section class="main-container">
-        <center>
-            <h1>User Dashboard</h1>
-        </center>
-        <?php if($_SESSION['user_id'] !== 1){ ?>
+        <?php if($_SESSION['user_id'] != 1){ ?>
+            <center>
+                <h1>User Dashboard</h1>
+            </center>
             <div class="user-profile">
                 <ul>
                     <li class="profile-item">Username:
