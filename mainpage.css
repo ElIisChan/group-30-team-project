@@ -189,3 +189,12 @@ a:hover{
     margin: 35px auto;
     text-align: center;
 }
+.admin-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 25px 15px;
+}
+
+.admin-container * {
+    color: #000;
+}
