@@ -40,3 +40,13 @@
     margin-right: 20px;
     color: rgb(165, 165, 165);
 }
+
+.admin-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 25px 15px;
+}
+
+.admin-container * {
+    color: #000;
+}
