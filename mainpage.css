@@ -181,6 +181,11 @@ a:hover{
     margin: 0 auto;
     padding: 25px 0;
 }
-.checkout * {
+.checkout *, .about-section * {
     color: #000;
+}
+.about-section {
+    max-width: 80%;
+    margin: 35px auto;
+    text-align: center;
 }
