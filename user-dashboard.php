@@ -31,11 +31,11 @@
                 </ul>
             </div>
         <?php } else {
-            echo "<h1>Admin Dashboard</h1>";
 			$db = new mysqli("localhost", "u-210109870", "mVrSNyGnFNSJTDU", "u_210109870_db");
 			$result = $db->query("SELECT * FROM products");
 			if($result->num_rows > 0){ ?>
                 <div class="admin-container">
+                    <h1>Admin Dashboard</h1>
 					<?php while($row = $result->fetch_object()) { ?>
                         <div class="admin-product-container">
                             <h3 class="product-container-pro-heading">Product Name: <?php echo $row->p_name; ?></h3>
